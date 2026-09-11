@@ -6,7 +6,7 @@ option go_package = "kbatyr.sso.v1;ssov1";
 
 service Auth {
 	// Register registers a new user.
-	rpc Registter(RegisterRequest) returns(RegisterResponse);
+	rpc Register(RegisterRequest) returns(RegisterResponse);
 	// Login logs in a user and returns an auth token.
 	rpc Login(LoginRequest) returns (LoginResponse);
 	// IsAdmin checks whether a user is an admin.
